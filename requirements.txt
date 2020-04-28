@@ -1,0 +1,12 @@
+git+https://gitlab.com/ufal/dsg/dialmonkey.git@172d559ceb8eeee7f92726c72a9888f1c8c408f4 
+flask
+flask-assistant
+pyyaml
+cloudpickle
+sklearn
+unidecode
+regex
+scipy
+requests
+tqdm
+logzero
