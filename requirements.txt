@@ -1,4 +1,4 @@
-git+https://gitlab.com/ufal/dsg/dialmonkey.git@c11cf8ae93b19c5bbb1ebfaf7ccabbf0f1e65f24
+git+https://gitlab.com/ufal/dsg/dialmonkey.git@ce64288189dd68b6a479e68d85c024ea86a72ec0
 flask
 gunicorn
 flask-assistant
