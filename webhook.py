@@ -11,13 +11,14 @@ import json
 app = Flask(__name__)
 assist = Assistant(app, route='/', project_id='solaragent-kkdkcp')
 conf = load_conf(os.path.join(os.path.dirname(__file__), 'config.yaml'))
-logger = logging.getLogger('flask_assistant').setLevel(logging.DEBUG) 
+logger = logging.getLogger('flask_assistant').setLevel(logging.INFO) 
 
 def serialize_dialogue(dial):
-    return dict(dial.state)
+    return json.dumps(dict(dial.state))
 
 def deserialize_dialogue(state):
     if state is None: return Dialogue()
+    state = json.loads(state)
 
     # We cannot serialize Dialogue object nor can we set its state directly
     d = Dialogue()
@@ -40,4 +41,4 @@ def respond():
     return tell(resp)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
