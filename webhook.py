@@ -39,6 +39,3 @@ def respond():
     resp, isend = handler.get_response(dialogue, user_query)
     context_manager.set('dialogue', 'serialized', serialize_dialogue(dialogue))
     return tell(resp)
-
-if __name__ == '__main__':
-    app.run(debug=True)

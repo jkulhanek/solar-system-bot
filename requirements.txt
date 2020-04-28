@@ -1,5 +1,6 @@
 git+https://gitlab.com/ufal/dsg/dialmonkey.git@168aa90e00433c3cf8e6658ad99187bad5e2aa65
 flask
+gunicorn
 flask-assistant
 pyyaml
 cloudpickle
